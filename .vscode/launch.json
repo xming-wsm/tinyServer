@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug libdsp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tinyServer",  // 可执行文件路径
+            "args": [],  // 程序参数
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",  // WSL2中的GDB路径
+        }
+    ]
+}

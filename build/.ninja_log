@@ -1,0 +1,8 @@
+# ninja log v5
+1	319	1758294458397442887	CMakeFiles/tinyServer.dir/src/main.cpp.o	1016243ae2b4c725
+303	384	1758294518277407569	tinyServer	6a04f85b90af66dc
+0	303	1758294518197407581	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
+0	337	1758294528661411424	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
+337	417	1758294528745411524	tinyServer	6a04f85b90af66dc
+0	319	1758294573513434399	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
+319	401	1758294573597434411	tinyServer	6a04f85b90af66dc

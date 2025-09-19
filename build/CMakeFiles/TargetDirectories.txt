@@ -1,0 +1,3 @@
+/home/threeflowercat/Documents/lookforjob/tinyServer/build/CMakeFiles/tinyServer.dir
+/home/threeflowercat/Documents/lookforjob/tinyServer/build/CMakeFiles/edit_cache.dir
+/home/threeflowercat/Documents/lookforjob/tinyServer/build/CMakeFiles/rebuild_cache.dir

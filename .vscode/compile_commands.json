@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/main.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp",
+  "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp"
+},
+{
+  "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp",
+  "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp"
+}
+]
