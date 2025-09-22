@@ -1,8 +1,18 @@
 # ninja log v5
-1	319	1758294458397442887	CMakeFiles/tinyServer.dir/src/main.cpp.o	1016243ae2b4c725
-303	384	1758294518277407569	tinyServer	6a04f85b90af66dc
-0	303	1758294518197407581	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
-0	337	1758294528661411424	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
-337	417	1758294528745411524	tinyServer	6a04f85b90af66dc
-0	319	1758294573513434399	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	b52e18595ff2997a
-319	401	1758294573597434411	tinyServer	6a04f85b90af66dc
+2	619	1758553334027765735	CMakeFiles/tinyServer.dir/src/main.cpp.o	a0e59f2be09ae630
+297	388	1758549019104120769	tinyServer	8d26df54d98a6246
+1	617	1758553334027765735	CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o	54943e38cab8352a
+1	631	1758553334043765733	CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o	8b7ce937154d615
+932	1071	1758548922724129243	tinyServerUnitTests	ef29dbfa7fd0fde3
+5	1037	1758553334443765708	CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o	18cb029d85c2aa5
+2	633	1758553334043765733	CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o	9d4888dbbb3ab5cf
+4	133	1758553333547765766	CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o	1d4733875a06e6fd
+1	313	1758529020036091943	CMakeFiles/tinyServerUnitTests.dir/src/main.cpp.o	5bc1c40f1550a471
+3	619	1758553334027765735	CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o	fd4e074bca82a2dc
+2	375	1758553333787765750	CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o	fbdf186b1fff8511
+2	133	1758553333547765766	CMakeFiles/tinyServer.dir/src/config/configure.cpp.o	59dc4f284ba194aa
+3	376	1758553333787765750	CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o	8e78a7e4ea3891cc
+1	153	1758553374855762075	CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o	8e78a7e4ea3891cc
+0	154	1758553374855762075	CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o	fbdf186b1fff8511
+154	231	1758553374935762071	tinyServer	e672db27c8bf909
+153	288	1758553374991762068	tinyServerUnitTests	dba825a8e6323e04

@@ -25,14 +25,24 @@ public:
         ERROR
     };
 
+    // 设置日志文件路径（必须最先调用）
+    static void init(const string& log_path);
     // 单例模式接口
-    static shared_ptr<Logger> getInstance(const string& log_path);
+    static shared_ptr<Logger> getInstance();
 
+    // 暂不支持可变参数？
     void log(level l, const string& msg);
 private:
     Logger(const string& log_path);             // 私有化构造函数
     Logger(const Logger&) = delete;             // 禁止拷贝
-    Logger& operator=(const Logger&) = delete;  // 禁止运算符重载
+    Logger& operator=(const Logger&) = delete;  // 禁止拷贝赋值
+    Logger(Logger&&) = delete;                  // 禁止移动（单例无需移动）
+    Logger& operator=(Logger&&) = delete;       // 禁止移动赋值
+
+
+    static shared_ptr<Logger> instance;     // 静态实例（全局唯一）
+    static std::mutex init_mtx;             // 初始化锁
+
 
     ofstream _log_file;     // 日志文件对象
     string   _log_path;     // 日志文件路径

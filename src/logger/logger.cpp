@@ -3,11 +3,14 @@
 #include <ctime>
 #include <ios>
 #include <iostream>
+#include <memory>
+#include <mutex>
 #include <ostream>
 #include <cerrno>
 #include <cstring>
 #include <sched.h>
 #include <sstream>
+#include <stdexcept>
 #include <string>
 #include <thread>
 
@@ -18,12 +21,33 @@
 
 using namespace std;
 
+// 全局初始化 Logger 中的静态变量
+shared_ptr<Logger> Logger::instance = nullptr;
+mutex Logger::init_mtx;
+
+
+
+// 设置日志文件路径（必须最先调用）
+void Logger::init(const string& log_path) {
+    // 自动为 init_mtx 加锁，直到销毁或遇到异常
+    lock_guard<mutex> lock(init_mtx);
+    
+    if (log_path.empty()) {
+        throw invalid_argument("log path should not be empty\n");
+    }
+
+    if (instance != nullptr) {
+        cerr << "日志系统已进行初始化，文件路径为: " << instance->_log_path << endl;
+    }
+
+    instance = shared_ptr<Logger>(new Logger(log_path));
+}
+
 
 
 
 // 单例模式接口
-shared_ptr<Logger> Logger::getInstance(const string& log_path) {
-    static shared_ptr<Logger> instance(new Logger(log_path));
+shared_ptr<Logger> Logger::getInstance() {
     return instance;
 }
 
@@ -78,7 +102,7 @@ Logger::Logger(const string& log_path) : _log_path(log_path) {
         _log_file.open(log_path, ios::app | ios::out);
     } 
     catch (const ios_base::failure& e) {
-        cerr << "Can't open file: " << e.what() << ": ";
+        cerr << "Can't open log: " << e.what() << ": ";
         cout << strerror(errno) << endl;
     }
     

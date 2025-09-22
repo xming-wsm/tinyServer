@@ -21,15 +21,21 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS True)
 
 
 # ----------- 添加头文件目录 -----------
+message(STATUS "Current Proejct Sourrce Path: ${PROJECT_SOURCE_DIR}")
 include_directories(
     ${PROJECT_SOURCE_DIR}/inc/logger
+    ${PROJECT_SOURCE_DIR}/inc/net
+    ${PROJECT_SOURCE_DIR}/inc/process
+    ${PROJECT_SOURCE_DIR}/inc/config
 )
 
 
 # ---------- 添加源文件目录 ------------
 # 搜索 src/ 目录下的所有 .cpp 文件
-aux_source_directory(${PROJECT_SOURCE_DIR}/src SOURCES)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/logger SOURCES)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/net SOURCES)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/process SOURCES)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/config SOURCES)
 
 
 message(STATUS "Files in SOURCES:")
@@ -39,4 +45,69 @@ endforeach()
 
 
 #----------- 构建项目 -----------------
-add_executable(tinyServer ${SOURCES})
+add_executable(
+    tinyServer 
+    ${SOURCES}
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+)
+
+
+
+
+
+
+
+
+
+
+#-----------unit test----------------
+enable_testing()
+
+find_package(GTest REQUIRED)
+if (GTest_FOUND)
+    message(STATUS "Founded Google Test")
+    message(STATUS "Add testing files ...")
+
+    # 搜索测试文件
+    aux_source_directory(${PROJECT_SOURCE_DIR}/test TEST_SOURCES_LIST)
+    foreach(test_file IN LISTS TEST_SOURCES_LIST)
+        message(STATUS "  - ${test_file}")
+    endforeach()
+
+    # 创建测试可执行文件
+    add_executable(tinyServerUnitTests ${SOURCES} ${TEST_SOURCES_LIST})
+
+
+    # 链接测试依赖
+    target_link_libraries(
+        tinyServerUnitTests
+        gtest
+        gtest_main
+        pthread
+    )
+
+    # 头文件路径
+    include_directories(
+        ${PROJECT_SOURCE_DIR}/inc/logger
+        ${PROJECT_SOURCE_DIR}/inc/net
+    )
+
+    # 确保 test 目录存在
+    file(MAKE_DIRECTORY ${PROJECT_SOURCE_DIR}/test)
+
+    # 设置测试报告输出路径
+    set(TEST_REPORT_DIR ${PROJECT_SOURCE_DIR}/test)
+
+
+
+    # 注册测试
+    add_test(
+        NAME tinyServerUnitTests
+        COMMAND tinyServerUnitTests
+    )
+
+    
+
+else()
+    message(WARNING "Google Test not found, tests will not be built")
+endif()

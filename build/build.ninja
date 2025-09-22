@@ -49,19 +49,40 @@ cmake_ninja_workdir = /home/threeflowercat/Documents/lookforjob/tinyServer/build
 
 build cmake_object_order_depends_target_tinyServer: phony || CMakeFiles/tinyServer.dir
 
-build CMakeFiles/tinyServer.dir/src/main.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp || cmake_object_order_depends_target_tinyServer
-  DEP_FILE = CMakeFiles/tinyServer.dir/src/main.cpp.o.d
-  FLAGS = -g -O0 -Wall -std=gnu++17
-  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger
-  OBJECT_DIR = CMakeFiles/tinyServer.dir
-  OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src
-
 build CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp || cmake_object_order_depends_target_tinyServer
   DEP_FILE = CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o.d
   FLAGS = -g -O0 -Wall -std=gnu++17
-  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
   OBJECT_DIR = CMakeFiles/tinyServer.dir
   OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src/logger
+
+build CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp || cmake_object_order_depends_target_tinyServer
+  DEP_FILE = CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src/net
+
+build CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp || cmake_object_order_depends_target_tinyServer
+  DEP_FILE = CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src/process
+
+build CMakeFiles/tinyServer.dir/src/config/configure.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp || cmake_object_order_depends_target_tinyServer
+  DEP_FILE = CMakeFiles/tinyServer.dir/src/config/configure.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src/config
+
+build CMakeFiles/tinyServer.dir/src/main.cpp.o: CXX_COMPILER__tinyServer_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp || cmake_object_order_depends_target_tinyServer
+  DEP_FILE = CMakeFiles/tinyServer.dir/src/main.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServer.dir/src
 
 
 # =============================================================================
@@ -71,13 +92,86 @@ build CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o: CXX_COMPILER__tinyServe
 #############################################
 # Link the executable tinyServer
 
-build tinyServer: CXX_EXECUTABLE_LINKER__tinyServer_Debug CMakeFiles/tinyServer.dir/src/main.cpp.o CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o
+build tinyServer: CXX_EXECUTABLE_LINKER__tinyServer_Debug CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o CMakeFiles/tinyServer.dir/src/config/configure.cpp.o CMakeFiles/tinyServer.dir/src/main.cpp.o
   FLAGS = -g -O0 -Wall
   OBJECT_DIR = CMakeFiles/tinyServer.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = tinyServer
   TARGET_PDB = tinyServer.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tinyServerUnitTests
+
+
+#############################################
+# Order-only phony target for tinyServerUnitTests
+
+build cmake_object_order_depends_target_tinyServerUnitTests: phony || CMakeFiles/tinyServerUnitTests.dir
+
+build CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o: CXX_COMPILER__tinyServerUnitTests_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp || cmake_object_order_depends_target_tinyServerUnitTests
+  DEP_FILE = CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServerUnitTests.dir/src/logger
+
+build CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o: CXX_COMPILER__tinyServerUnitTests_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp || cmake_object_order_depends_target_tinyServerUnitTests
+  DEP_FILE = CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServerUnitTests.dir/src/net
+
+build CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o: CXX_COMPILER__tinyServerUnitTests_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp || cmake_object_order_depends_target_tinyServerUnitTests
+  DEP_FILE = CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServerUnitTests.dir/src/process
+
+build CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o: CXX_COMPILER__tinyServerUnitTests_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp || cmake_object_order_depends_target_tinyServerUnitTests
+  DEP_FILE = CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServerUnitTests.dir/src/config
+
+build CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o: CXX_COMPILER__tinyServerUnitTests_Debug /home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_tcpserver.cpp || cmake_object_order_depends_target_tinyServerUnitTests
+  DEP_FILE = CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o.d
+  FLAGS = -g -O0 -Wall -std=gnu++17
+  INCLUDES = -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tinyServerUnitTests.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tinyServerUnitTests
+
+
+#############################################
+# Link the executable tinyServerUnitTests
+
+build tinyServerUnitTests: CXX_EXECUTABLE_LINKER__tinyServerUnitTests_Debug CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o
+  FLAGS = -g -O0 -Wall
+  LINK_LIBRARIES = -lgtest  -lgtest_main  -lpthread
+  OBJECT_DIR = CMakeFiles/tinyServerUnitTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tinyServerUnitTests
+  TARGET_PDB = tinyServerUnitTests.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/threeflowercat/Documents/lookforjob/tinyServer/build && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -113,7 +207,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/threeflowercat/Documents/lookforjob/tinyServer/build
 
-build all: phony tinyServer
+build all: phony tinyServer tinyServerUnitTests
 
 # =============================================================================
 # Built-in targets
@@ -122,14 +216,14 @@ build all: phony tinyServer
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/local/lib/cmake/GTest/GTestConfig.cmake /usr/local/lib/cmake/GTest/GTestConfigVersion.cmake /usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake /usr/local/lib/cmake/GTest/GTestTargets.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindGTest.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GoogleTest.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /usr/local/lib/cmake/GTest/GTestConfig.cmake /usr/local/lib/cmake/GTest/GTestConfigVersion.cmake /usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake /usr/local/lib/cmake/GTest/GTestTargets.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindGTest.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindThreads.cmake /usr/share/cmake-3.22/Modules/GoogleTest.cmake /usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################
