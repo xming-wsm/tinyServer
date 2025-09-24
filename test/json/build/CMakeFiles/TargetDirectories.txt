@@ -1,0 +1,3 @@
+/home/threeflowercat/Documents/lookforjob/tinyServer/test/json/build/CMakeFiles/jsontest.dir
+/home/threeflowercat/Documents/lookforjob/tinyServer/test/json/build/CMakeFiles/edit_cache.dir
+/home/threeflowercat/Documents/lookforjob/tinyServer/test/json/build/CMakeFiles/rebuild_cache.dir

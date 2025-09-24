@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -g -O0 -Wall CMakeFiles/jsontest.dir/jsonlib-test.cpp.o -o jsontest 

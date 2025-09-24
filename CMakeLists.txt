@@ -38,6 +38,7 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src/process SOURCES)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/config SOURCES)
 
 
+
 message(STATUS "Files in SOURCES:")
 foreach(src_file IN LISTS SOURCES)
     message(STATUS "  - ${src_file}")
@@ -90,6 +91,8 @@ if (GTest_FOUND)
     include_directories(
         ${PROJECT_SOURCE_DIR}/inc/logger
         ${PROJECT_SOURCE_DIR}/inc/net
+        ${PROJECT_SOURCE_DIR}/lib/json
+        ${PROJECT_SOURCE_DIR}/lib/configure
     )
 
     # 确保 test 目录存在
@@ -97,7 +100,6 @@ if (GTest_FOUND)
 
     # 设置测试报告输出路径
     set(TEST_REPORT_DIR ${PROJECT_SOURCE_DIR}/test)
-
 
 
     # 注册测试
@@ -111,3 +113,9 @@ if (GTest_FOUND)
 else()
     message(WARNING "Google Test not found, tests will not be built")
 endif()
+
+
+
+
+
+

@@ -1,52 +1,57 @@
 [
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/logger/logger.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/net/tcpServer.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/process/master_process.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/config/configure.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/config/configure.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/main.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServer.dir/src/main.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/main.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/logger/logger.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/logger/logger.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/net/tcpServer.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/net/tcpServer.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/process/master_process.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/process/master_process.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/src/config/configure.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/src/config/configure.cpp"
 },
 {
   "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
-  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_tcpserver.cpp",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/test/gtest_jsonparse.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_jsonparse.cpp",
+  "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_jsonparse.cpp"
+},
+{
+  "directory": "/home/threeflowercat/Documents/lookforjob/tinyServer/build",
+  "command": "/usr/bin/clang++-17 -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/logger -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/net -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/process -I/home/threeflowercat/Documents/lookforjob/tinyServer/inc/config -I/home/threeflowercat/Documents/lookforjob/tinyServer/lib/json -g -O0 -Wall -std=gnu++17 -o CMakeFiles/tinyServerUnitTests.dir/test/gtest_tcpserver.cpp.o -c /home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_tcpserver.cpp",
   "file": "/home/threeflowercat/Documents/lookforjob/tinyServer/test/gtest_tcpserver.cpp"
 }
 ]
